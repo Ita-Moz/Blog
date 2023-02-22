@@ -9,6 +9,7 @@ function Blog() {
   const filterPosts = useMemo(() => {
     return filterTag.length > 0 ? posts.filter((post) => filterTag.every((tag) => post.category.includes(tag))) : posts
   }, [filterTag])
+
   let tags: string[] = []
   for (const post of posts) {
     for (const tag of post.category) {

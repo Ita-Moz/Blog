@@ -12,7 +12,7 @@ function Navbar() {
   const arrayLink = [
     {
       name: "About",
-      link: "/about",
+      link: "#hello",
     },
     {
       name: "Project",
@@ -71,7 +71,7 @@ function Navbar() {
       <ul className={`${open ? "" : "hidden"} sm:flex ita-navbar-menu animate-from-right bg-white dark:bg-dark font-bold`}>
         {arrayLink.map((item, index) => (
           <li key={index}>
-            <Link className='ita-navbar-link dark:hover:text-secondary ' href={item.link}>
+            <Link className='ita-navbar-link dark:hover:text-secondary select-none' href={item.link}>
               {item.name}
             </Link>
           </li>

@@ -1,5 +1,6 @@
 import Post from "@/components/Post"
-import { posts, works } from "@/data/data"
+import Slider from "@/components/Slider"
+import { works } from "@/data/data"
 import { IPost } from "@/models/post"
 import Head from "next/head"
 import Image from "next/image"
@@ -16,7 +17,7 @@ export default function Home() {
       <main>
         <section
           id='hello'
-          className='container mx-auto flex flex-col-reverse justify-center items-center pt-[33px] pb-[58px] gap-[42px] sm:flex-row lg:px-[120px]'>
+          className='container mx-auto flex flex-col-reverse justify-center items-center min-h-[90vh] pb-[50px] gap-[42px] sm:flex-row lg:px-[120px]'>
           <div className='sm:flex sm:flex-col sm:basis-4/6'>
             <h1 className='text-[44px] lg:text-[48px] font-bold flex flex-col items-center sm:items-start sm:mt-[130px] gap-1'>
               <span>Hi,I am Manh,</span>
@@ -47,7 +48,7 @@ export default function Home() {
         </section>
         <section
           id='recent-posts'
-          className='container mx-auto rounded py-5 dark:bg-light dark:text-dark bg-[#EDF7FA] px-5 sm:px-10'>
+          className='container mx-auto rounded py-5 dark:bg-orange-100 dark:text-dark bg-[#EDF7FA] px-5 sm:px-10'>
           <div className='text-center sm:flex sm:justify-between sm:items-center '>
             <span className='text-lg'>Recent posts</span>{" "}
             <Link
@@ -56,21 +57,7 @@ export default function Home() {
               View all
             </Link>
           </div>
-
-          <div className='sm:flex sm:gap-5 sm:items-start'>
-            {posts
-              .map((post, index) => (
-                <Post
-                  key={index}
-                  category={post.category}
-                  desc={post.desc}
-                  title={post.title}
-                  tag={"2019"}
-                  image={post.image}
-                />
-              ))
-              .slice(0, 2)}
-          </div>
+           <Slider />
         </section>
 
         <section id='works' className='container mx-auto xl:max-w-[1000px] dark:bg-dark py-5 my-10'>

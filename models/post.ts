@@ -3,5 +3,5 @@ export interface IPost {
   tag: string
   category: string[]
   desc: string
-  image: string
+  image?: string
 }
