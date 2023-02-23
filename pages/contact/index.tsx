@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div className='mx-auto h-full flex container px-5'>
       <div className='hidden md:block md:basis-3/6 md:relative'>
-        <Image src={'/contact1.webp'} width={300} height={300} className="md:w-full md:object-cover md:rounded-lg md:absolute md:left-0 md:top-10" alt="contact"/>
+        <Image src={'/contact.gif'} width={300} height={300} className="md:w-full md:object-cover md:rounded-lg md:absolute md:left-0 md:top-10" alt="contact"/>
       </div>
       <div className="md:basis-3/6 md:px-10 md:my-5 md:rounded-md">
         <div className='mt-5 flex flex-col items-center gap-5'>
