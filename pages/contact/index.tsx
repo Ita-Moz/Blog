@@ -22,7 +22,7 @@ function Contact() {
         )
         .then(
           () => {
-            alert("Email sent successfully!")
+            alert("Email sent successfully!!")
             router.reload()
           },
           () => {
