@@ -12,7 +12,7 @@ function Navbar() {
   const arrayLink = [
     {
       name: "About",
-      link: "#hello",
+      link: "/#hello",
     },
     {
       name: "Project",

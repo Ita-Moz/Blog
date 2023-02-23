@@ -29,7 +29,7 @@ export default function Home() {
               the opportunity to develop myself.
             </p>
             <div className='flex justify-center sm:justify-start mt-[27px]'>
-              <button className='ita-btn-shadow bg-primary text-white dark:shadow-slate-600'>
+              <button className='ita-btn-shadow bg-primary text-white dark:shadow-slate-600 rounded p-5'>
                 <a href='/CV_LuongVanManh.pdf' download>
                   Download Resume
                 </a>

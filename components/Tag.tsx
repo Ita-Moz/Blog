@@ -6,7 +6,7 @@ type TagProps = {
 }
 function Tag({text,classes,onClick}: TagProps) {
   return (
-    <span onClick={onClick} className={`${classes} font-bold rounded-full bg-dark text-white px-5 py-[2px] dark:text-dark dark:bg-white cursor-pointer hover:shadow-primary dark:hover:shadow-secondary hover:shadow-md`}>{text}</span>
+    <span onClick={onClick} className={`${classes} font-bold rounded-full bg-dark text-white px-5 py-[2px] dark:text-dark dark:bg-white cursor-pointer`}>{text}</span>
   )
 }
 

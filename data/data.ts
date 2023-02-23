@@ -37,6 +37,7 @@ const works = [
 ]
 const posts = [
   {
+    id:1,
     title:'Mua 300 bài code thiếu nhi ở đâu bây giờ?',
     desc:'300 Bài code thiếu nhi là tập hợp các câu chuyện vui kể về một người không làm việc trong lĩnh vực IT, sau đó bỏ tất cả, quyết tâm theo đuổi lập trình để đổi đời.',
     tag:'10/1/2023',
@@ -44,6 +45,7 @@ const posts = [
     category: ['Education','Code'],
   },
   {
+    id:2,
     title:'5 Điều đáng mong chờ nhất tại ‘Flavors Vietnam 2023',
     desc:'Chuỗi sự kiện thường niên Flavors Vietnam, do Vietcetera và Mastercard đồng tổ chức, đã từng bước ghi dấu ấn riêng của mình sau mỗi mùa hoạt động, trở thành một nền tảng văn hoá và kinh doanh F&B uy tín và bền vững.',
     tag:'1/1/2023',
@@ -51,6 +53,7 @@ const posts = [
     category: ['Event'],
   },
   {
+    id:3,
     title:'Liệu Việt Nam có thể dẫn đầu công nghệ blockchain toàn cầu?',
     desc:'Việt Nam đang có những bước chuyển tiến rõ rệt để được biết đến nhiều hơn là một cường quốc nông nghiệp. Chỉ riêng trong năm 2016, Việt Nam thu hút lượng vốn đầu tư nước ngoài lên đến 35,88 tỉ đô la Mỹ. Sự chuyển mình từ một nước xuất khẩu các mặt hàng truyền thống sang sản xuất phụ kiện, linh kiện điện tử đã đưa Việt Nam trở thành một trong những đối thủ đáng gờm đối với các cường quốc công nghệ như Trung Quốc và Ấn Độ.',
     tag:'10/12/2022',
@@ -58,6 +61,7 @@ const posts = [
     category: ['Blockchain','Code'],
   },
   {
+    id:4,
     title:'Xem phim một mình ngày Valentine - không tệ như mình nghĩ!',
     desc:'Ngày này vốn có nguồn gốc từ một vị thánh La Mã về tình yêu. Nhưng không vì vậy mà việc có người yêu trở thành điều kiện tiên quyết để vui trong ngày này. Mình có nhiều cách khác để tận hưởng với gia đình, bạn bè, hoặc thậm chí “hẹn hò với bản thân” như cách mình đã làm. Dù sao thì, cũng phải thử mới biết mà.',
     tag:'14/2/2023',
