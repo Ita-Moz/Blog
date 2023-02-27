@@ -1,13 +1,14 @@
 import { posts } from "@/data/data"
 import { smoothHorizontalScrolling } from "@/utils/animation"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import { useRef } from "react"
 import { GrNext, GrPrevious } from "react-icons/gr"
 
 function Slider() {
   const sliderRef = useRef<HTMLDivElement>(null)
   const itemRef = useRef<HTMLDivElement>(null)
-
+  const router = useRouter()
   const handleScrollLeft = () => {
     if (sliderRef.current !== null && itemRef.current !== null) {
       const maxScroll = -sliderRef.current.scrollWidth + sliderRef.current?.clientWidth
@@ -30,7 +31,7 @@ function Slider() {
       <div ref={sliderRef} className='overflow-hidden overflow-x-hidden  overflow-y-hidden flex gap-5'>
         {posts
           .map((post, index) => (
-            <div key={index} className='cursor-pointer opacity-80 hover:opacity-100 duration-300 rounded' ref={itemRef}>
+            <div key={index} className='cursor-pointer opacity-80 hover:opacity-100 duration-300 rounded' ref={itemRef} onClick={()=>router.push(`/blog/${post.id}`)}>
               <Image
                 src={post.image}
                 width={300}
